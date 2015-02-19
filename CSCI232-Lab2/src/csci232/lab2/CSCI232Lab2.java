@@ -7,12 +7,10 @@ package csci232.lab2;
 
 /**
  *
- * @author thechucklingatom
+ * @author Robert.Putnam
  * @author Mathew.Gostnell
  */
 public class CSCI232Lab2 {
-    
-
     /**
      * @param args the command line arguments
      */
