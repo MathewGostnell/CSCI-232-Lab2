@@ -37,6 +37,7 @@ public class HashTableApp {
                 System.out.print(n + " is already a prime!  "
                         + "So let's make our Hash Table!\n");
                 foundPrime = true;
+                size = n;
             }
         } while (!foundPrime);
 
