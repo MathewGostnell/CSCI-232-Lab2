@@ -3,12 +3,10 @@ package csci232.lab2;
 class Node implements Comparable {
 
     public int key;         // data item (key)
-    public char data;       // data item
     public Node leftChild; // this node's left child
     public Node rightChild; // this node's right child
 
-    public Node(char ch, int freq) {
-        data = ch;
+    public Node(int freq) {
         key = freq;
     }
 
@@ -16,8 +14,6 @@ class Node implements Comparable {
     {
         System.out.print('{');
         System.out.print(key);
-        System.out.print(", ");
-        System.out.print(data);
         System.out.print("} ");
     }
 
