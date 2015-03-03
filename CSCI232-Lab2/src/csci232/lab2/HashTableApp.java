@@ -5,6 +5,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
+/*
+    @author Mathew.Gostnell
+    @author Robert.Putnam
+*/
+
 public class HashTableApp {
 
 
