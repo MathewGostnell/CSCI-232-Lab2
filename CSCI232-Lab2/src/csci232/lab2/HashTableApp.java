@@ -78,9 +78,13 @@ public class HashTableApp {
                     break;
                 case 'f':
                 case 'F':
-                    System.out.println("What would you like to insert?");
+                    System.out.println("What would you like to find?");
                     int valueToFind = getInt();
-                    hashTable.find(valueToFind);
+                    if(hashTable.find(valueToFind) != null){
+                        System.out.printf("%d exists in the table!!\n", valueToFind);
+                    }else{
+                        System.out.printf("%d doesn't exist in the table!!\n", valueToFind);
+                    }
                     break;
                 case 'x':
                 case 'X':

@@ -1,5 +1,7 @@
 package csci232.lab2;
 
+import java.util.Random;
+
 public class HashTable {
 
     private final int tableSize;
@@ -12,6 +14,14 @@ public class HashTable {
         hashTable = new BinaryTree[tableSize];
         for(int i = 0; i < tableSize; i++){
             hashTable[i] = new BinaryTree();
+        }
+        if(isRandom){
+            Node toInsert;
+            Random myRand = new Random();
+            for(BinaryTree myTree : hashTable){
+                toInsert = new Node(myRand.nextInt());
+                myTree.insert(null);
+            }
         }
     }
 
@@ -36,8 +46,13 @@ public class HashTable {
         }
     }
 
-    public void find(int n) {
-        hashTable[getKey(n)].find(n);
+    public Integer find(int n) {
+        if(hashTable[getKey(n)].find(n) != null){
+            return n;
+        }
+        else{
+            return null;
+        }
     }
 
     public int getKey(int n) {
