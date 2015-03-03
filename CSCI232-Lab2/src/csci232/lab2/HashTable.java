@@ -1,6 +1,5 @@
 package csci232.lab2;
 
-import java.util.Random;
 
 public class HashTable {
 
@@ -14,14 +13,6 @@ public class HashTable {
         hashTable = new BinaryTree[tableSize];
         for(int i = 0; i < tableSize; i++){
             hashTable[i] = new BinaryTree();
-        }
-        if(isRandom){
-            Node toInsert;
-            Random myRand = new Random();
-            for(BinaryTree myTree : hashTable){
-                toInsert = new Node(myRand.nextInt());
-                myTree.insert(null);
-            }
         }
     }
 
@@ -60,11 +51,7 @@ public class HashTable {
     }
 
     public boolean isRandom() {
-        if (isRandom) {
-            return true;
-        } else {
-            return false;
-        }
+        return isRandom;
     }
 
 }

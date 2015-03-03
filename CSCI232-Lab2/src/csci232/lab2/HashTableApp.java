@@ -23,7 +23,7 @@ public class HashTableApp {
             if (!isPrime(n)) {
                 System.out.print("\nSorry, " + n + " is not a prime number.  "
                         + "Let's find a prime bigger than " + n + "!\n");
-                int size = findPrime(n);
+                size = findPrime(n);
 
                 if (size == -1) {
                     System.out.print("We couldn't find a prime [p > " + n
