@@ -21,18 +21,17 @@ public class HashTable {
         if (hashTable[getKey(n)].find(n) == null) {
             Node node = new Node(n);
             hashTable[getKey(n)].insert(node);
-//        } else {  // we found that node already, so let's not insert it!
-//            System.out.println("The HashTable already has that item in it!");
-//        }
+        } else {  // we found that node already, so let's not insert it!
+            System.out.printf("The HashTable already has item %d in it!\n", n);
         }
     }
 
     public void showHashTable() {
         for (int i = 0; i < tableSize; i++) {
             if (hashTable[i] != null) {
-                System.out.println(i + ". ");
-                hashTable[i].traverse(1);
-                // the 1 in traverse() is for preOrder traversal
+                System.out.printf("(%d)-> ", i);
+                hashTable[i].traverse(2);
+                // the 2 in traverse() is for inOrder traversal
             }
         }
     }

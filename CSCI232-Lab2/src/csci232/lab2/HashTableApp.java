@@ -22,7 +22,7 @@ public class HashTableApp {
 
     public static void main(String[] args) throws IOException {
         do {
-            System.out.print("Please enter a size for the Hash Table: ");
+            System.out.print("Please enter a size for the Hash Table greater than 9: ");
             int n = getInt();
 
             if (!isPrime(n)) {
